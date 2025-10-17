@@ -1,16 +1,40 @@
-# React + Vite
+## Checklista för godkänt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [ ] Skapa återanvändningsbara React-komponenter enligt designfilen (Figma).
+- [ ] Strukturera hemsidan utifrån designen i designfilen.
+- [ ] Ta designbeslut vid avvikelser mellan designfil och verklighet.
+- [ ] Implementera sex olika sidor enligt designfilen.
+- [ ] Använd återanvändningsbara komponenter på sidorna.
+- [ ] Implementera hover-effekter och formulärvalidering enligt sektionen Components.
+- [ ] Sidan behöver inte vara responsiv (endast för storskärm).
+- [ ] Byt ut statisk information mot data från Web API.
+- [ ] Hämta och hantera formulärdata via Web API.
+- [ ] Navigering mellan sidorna: Home, About Us, Contact Us.
+- [ ] Hämta sektionerna Testimonials, Latest Blogs och FAQs från Web API.
+- [ ] Implementera fungerande FAQ-accordion.
+- [ ] Validera alla formulärfält med * på lämpligt sätt.
+- [ ] Använd Git/GitHub för versionshantering av koden.
 
-Currently, two official plugins are available:
+## Checklista för väl godkänt
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [ ] Alla sidor finns med och har fungerande navigering.
+- [ ] Felaktiga länkar eller sidor leder till en 404-sida.
+- [ ] Knappar, Cards, Titles, Price List och blogginlägg har hover-funktionalitet enligt Components-delen i designfilen.
+- [ ] Sidan är tillgänglighetsanpassad enligt WCAG 2.1 så långt som möjligt.
+- [ ] React Hooks används i implementationen.
 
-## React Compiler
+### Formulär
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [ ] Formulär skickar data till rätt API-endpoint.
+- [ ] Formulärfält valideras med regular expressions.
+- [ ] Bekräftelse visas vid 200 OK-svar.
+- [ ] Meddelande från API:t visas på sidan.
+- [ ] Formulär töms efter lyckad inlämning.
+- [ ] Felmeddelanden (400 Bad Request) hanteras på ett lämpligt sätt.
 
-## Expanding the ESLint configuration
+### Versionshantering
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [ ] Koden versionshanteras med Git och GitHub.
+- [ ] Komponenter skapas i separata branches.
+- [ ] Alla branches laddas upp till GitHub (får inte tas bort).
+- [ ] Slutversionen är mergad till main vid inlämning.
