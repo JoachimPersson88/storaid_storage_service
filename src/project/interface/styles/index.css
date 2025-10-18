@@ -30,6 +30,7 @@
   --color-button-hover-text: var(--primary); /* Textfärg för knappar vid hover */
   --color-button-hover-background: var(--secondary); /* Bakgrundsfärg för knappar vid hover */
 
+  /* Grundinställningar för rubriker, storlek, höjd och tjocklek */
   --h1-size: 80px; --h1-line: 80px; --h1-weight: 700;
   --h2-size: 64px; --h2-line: 80px; --h2-weight: 800;
   --h3-size: 52px; --h3-line: 52px; --h3-weight: 700;
@@ -37,42 +38,43 @@
   --h5-size: 24px; --h5-line: 25px; --h5-weight: 600;
   --h6-size: 20px; --h6-line: 25px; --h6-weight: 600;
 
+  /* Grundinställningar för brödtext, storlek, höjd och tjocklek */
   --body1-size: 16px; --body1-line: 24px; --body1-weight: 400;
   --body2-size: 15px; --body2-line: 25px; --body2-weight: 600;
   --body3-size: 18px; --body3-line: 25px; --body3-weight: 600;
   --body4-size: 14px; --body4-line: 25px; --body4-weight: 400;
   --body5-size: 17px; --body5-line: 20.4px; --body5-weight: 600;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Grundläggande stil för body-elementet */
 body {
   line-height: 1.5; /* Sätter radavståndet för text */
-  background-color: #ffffff; /* Grundbakgrundsfärg (dubbeldefinierad men skrivs över nedan) */
-  font-family: "Inter", "Urbanist", sans-serif; /* Använder Manrope som standardfont */
+  font-family: "Inter", "Urbanist", sans-serif system-ui, Helvetica, Arial; /* Diverse typografer */
   font-style: normal; /* Standard textstil */
   font-weight: 400; /* Normal textvikt */
   color: var(--color-body-text); /* Textfärg från variabel */
   background-color: var(--color-body-background); /* Bakgrundsfärg från variabel */
 }
-¨
+
+/* Brödtext(.body-text 1-5) som hämtar grundinställningarna från root */
 .body-text-1 { font-size: var(--body1-size); line-height: var(--body1-line); font-weight: var(--body1-weight); }
 .body-text-2 { font-size: var(--body2-size); line-height: var(--body2-line); font-weight: var(--body2-weight); }
 .body-text-3 { font-size: var(--body3-size); line-height: var(--body3-line); font-weight: var(--body3-weight); }
 .body-text-4 { font-size: var(--body4-size); line-height: var(--body4-line); font-weight: var(--body4-weight); }
 .body-text-5 { font-size: var(--body5-size); line-height: var(--body5-line); font-weight: var(--body5-weight); }
 
+/* Rubriker(h 1-6) som hämtar grundinställningarna från root */
 h1 { font-size: var(--h1-size); line-height: var(--h1-line); font-weight: var(--h1-weight); }
 h2 { font-size: var(--h2-size); line-height: var(--h2-line); font-weight: var(--h2-weight); }
 h3 { font-size: var(--h3-size); line-height: var(--h3-line); font-weight: var(--h3-weight); }
 h4 { font-size: var(--h4-size); line-height: var(--h4-line); font-weight: var(--h4-weight); }
 h5 { font-size: var(--h5-size); line-height: var(--h5-line); font-weight: var(--h5-weight); }
 h6 { font-size: var(--h6-size); line-height: var(--h6-line); font-weight: var(--h6-weight); }
-
-/* Grundläggande stil för rubriker (h1-h6) */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-heading-text); /* Ger rubriker en specifik färg */
-}
-
 
 /* Gör bilder responsiva */
 img {
@@ -110,7 +112,6 @@ button, .btn {
   padding: 10px 20px; /* Inre marginal (top/bottom: 10px, left/right: 20px) */
   border-radius: 5px; /* Rundar hörnen på knappen */
   text-decoration: none; /* Tar bort understrykning om det är en länk */
-  transition: background 0.15s ease-in-out; /* Smidig övergång vid hover */
 
   &:hover {
     background-color: var(--color-button-hover-background); /* Ändrar bakgrundsfärg vid hover */
@@ -119,5 +120,19 @@ button, .btn {
   img {
     height: 20px; /* Sätter en fast höjd för ikoner i knappar */
     width: auto; /* Behåller proportionerna på ikoner */
+  }
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
   }
 }
