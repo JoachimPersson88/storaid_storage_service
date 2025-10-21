@@ -33,4 +33,39 @@ Header{
       }
     }
   }
+  
+  .nav-area {
+    height: 90px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-left: 46px;
+    margin-right: 58px;
+  
+    .navlinks { 
+      display:flex; 
+      gap:34px; 
+
+      .link {
+        text-decoration: none;
+        color: var(--secondary);
+      }
+
+      .link.is-active { 
+        color: var(--accent); 
+      }
+    }
+    
+    img {
+      width: 181px;
+      height: 59px;
+    }
+
+    .btn-book {
+      background: var(--accent);
+      color: var(--secondary);
+      border: 0;
+      justify-self:end;
+    }
+  }
 }
