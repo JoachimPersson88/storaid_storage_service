@@ -1,0 +1,36 @@
+Header{
+  .bg {
+    background: var(--secondary);
+    color: var(--primary);
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    .bg-area {
+      height: 47px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 46px;
+      margin-right: 46px;
+      
+      .bg-left { 
+        display:flex;
+        gap:24px; 
+      }
+      
+      .bg-item { 
+        display:inline-flex;
+        gap:8px;
+      }
+
+      .bg-right { 
+        display:flex;
+        gap:19px;   
+      }
+
+      .social img {
+        display:flex;
+      }
+    }
+  }
+}
