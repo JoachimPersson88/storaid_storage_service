@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); /* Importerar Inter-fonten från Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap'); /* Importerar Urbanist-fonten från Google Fonts */
+@import "./header.css";
 
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
@@ -10,71 +11,62 @@
 
 /* Definierar CSS-variabler för färger och teman */
 :root {
-  --primary:rgba(255, 255, 255, 1); /* Huvudfärg, används som bas för knappar och andra element */
-  --secondary:rgba(18, 55, 42, 1); /* Sekundärfärg, används som sekundär för knappar och andra element */
-
+  /* Grundfärger*/
+  --primary:rgba(255, 255, 255, 1);
+  --secondary:rgba(18, 55, 42, 1);
   --accent:rgba(241, 195, 12, 1);
   --accent_3:rgba(18, 55, 42, 0.8);
-
   --color:rgba(18, 55, 42, 1);
   --color_2:rgba(236, 236, 236, 1);
   --color_3:rgba(250, 248, 236, 1);
   --color_4:rgba(241, 255, 234, 1);
-
-  --color-body-text: #565973; /* Textfärg för brödtext */
-  --color-body-background: #ffffff; /* Bakgrundsfärg för sidan */
-  --color-heading-text: rgba(18, 55, 42, 1); /* Textfärg för rubriker */
-
-  --color-button-text: rgba(18, 55, 42, 1); /* Textfärg för knappar */
-  --color-button-background: var(--primary); /* Bakgrundsfärg för knappar */
-  --color-button-hover-text: var(--primary); /* Textfärg för knappar vid hover */
-  --color-button-hover-background: var(--secondary); /* Bakgrundsfärg för knappar vid hover */
+  
+  /* Grundinställningar för knapp */
+  --color-button-text: rgba(18, 55, 42, 1);
+  --color-button-background: var(--primary); 
+  --color-button-hover-text: var(--primary);
+  --color-button-hover-background: var(--secondary);
 
   /* Grundinställningar för rubriker, storlek, höjd och tjocklek */
-  --h1-size: 80px; --h1-line: 80px; --h1-weight: 700;
-  --h2-size: 64px; --h2-line: 80px; --h2-weight: 800;
-  --h3-size: 52px; --h3-line: 52px; --h3-weight: 700;
-  --h4-size: 25px; --h4-line: 25px; --h4-weight: 700;
-  --h5-size: 24px; --h5-line: 25px; --h5-weight: 600;
-  --h6-size: 20px; --h6-line: 25px; --h6-weight: 600;
+  --h1-size: 80px; --h1-line: 80px; --h1-weight: 700; --h1-font: "Inter";
+  --h2-size: 64px; --h2-line: 80px; --h2-weight: 800; --h2-font: "Urbanist";
+  --h3-size: 52px; --h3-line: 52px; --h3-weight: 700; --h3-font: "Urbanist";
+  --h4-size: 25px; --h4-line: 25px; --h4-weight: 700; --h4-font: "Urbanist";
+  --h5-size: 24px; --h5-line: 25px; --h5-weight: 600; --h5-font: "Urbanist";
+  --h6-size: 20px; --h6-line: 25px; --h6-weight: 600; --h6-font: "Urbanist";
 
   /* Grundinställningar för brödtext, storlek, höjd och tjocklek */
-  --body1-size: 16px; --body1-line: 24px; --body1-weight: 400;
-  --body2-size: 15px; --body2-line: 25px; --body2-weight: 600;
-  --body3-size: 18px; --body3-line: 25px; --body3-weight: 600;
-  --body4-size: 14px; --body4-line: 25px; --body4-weight: 400;
-  --body5-size: 17px; --body5-line: 20.4px; --body5-weight: 600;
-  
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --body1-size: 16px; --body1-line: 24px; --body1-weight: 400; --body1-font: "Inter";
+  --body2-size: 15px; --body2-line: 25px; --body2-weight: 600; --body2-font: "Urbanist";
+  --body3-size: 18px; --body3-line: 25px; --body3-weight: 600; --body3-family: "Urbanist";
+  --body4-size: 14px; --body4-line: 25px; --body4-weight: 400; --body4-font: "Inter";
+  --body5-size: 17px; --body5-line: 20.4px; --body5-weight: 600; --body5-font: "Urbanist";
 }
 
 /* Grundläggande stil för body-elementet */
 body {
-  line-height: 1.5; /* Sätter radavståndet för text */
-  font-family: "Inter", "Urbanist", sans-serif system-ui, Helvetica, Arial; /* Diverse typografer */
-  font-style: normal; /* Standard textstil */
-  font-weight: 400; /* Normal textvikt */
-  color: var(--color-body-text); /* Textfärg från variabel */
-  background-color: var(--color-body-background); /* Bakgrundsfärg från variabel */
+  line-height: 1.5;
+  font-family: "Inter", "Urbanist", sans-serif system-ui, Helvetica, Arial;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--secondary); 
+  background-color: var(--primary); 
 }
 
 /* Brödtext(.body-text 1-5) som hämtar grundinställningarna från root */
-.body-text-1 { font-size: var(--body1-size); line-height: var(--body1-line); font-weight: var(--body1-weight); }
-.body-text-2 { font-size: var(--body2-size); line-height: var(--body2-line); font-weight: var(--body2-weight); }
-.body-text-3 { font-size: var(--body3-size); line-height: var(--body3-line); font-weight: var(--body3-weight); }
-.body-text-4 { font-size: var(--body4-size); line-height: var(--body4-line); font-weight: var(--body4-weight); }
-.body-text-5 { font-size: var(--body5-size); line-height: var(--body5-line); font-weight: var(--body5-weight); }
+.body-text { font-size: var(--body1-size); line-height: var(--body1-line); font-weight: var(--body1-weight); font-family: var(--body1-family);}
+.body-text-2 { font-size: var(--body2-size); line-height: var(--body2-line); font-weight: var(--body2-weight); font-family: var(--body2-family);}
+.body-text-3 { font-size: var(--body3-size); line-height: var(--body3-line); font-weight: var(--body3-weight); font-family: var(--body3-family);}
+.body-text-4 { font-size: var(--body4-size); line-height: var(--body4-line); font-weight: var(--body4-weight); font-family: var(--body4-family);}
+.body-text-5 { font-size: var(--body5-size); line-height: var(--body5-line); font-weight: var(--body5-weight); font-family: var(--body5-family);}
 
 /* Rubriker(h 1-6) som hämtar grundinställningarna från root */
-h1 { font-size: var(--h1-size); line-height: var(--h1-line); font-weight: var(--h1-weight); }
-h2 { font-size: var(--h2-size); line-height: var(--h2-line); font-weight: var(--h2-weight); }
-h3 { font-size: var(--h3-size); line-height: var(--h3-line); font-weight: var(--h3-weight); }
-h4 { font-size: var(--h4-size); line-height: var(--h4-line); font-weight: var(--h4-weight); }
-h5 { font-size: var(--h5-size); line-height: var(--h5-line); font-weight: var(--h5-weight); }
-h6 { font-size: var(--h6-size); line-height: var(--h6-line); font-weight: var(--h6-weight); }
+h1 { font-size: var(--h1-size); line-height: var(--h1-line); font-weight: var(--h1-weight); font-family: var(--h1-family);}
+h2 { font-size: var(--h2-size); line-height: var(--h2-line); font-weight: var(--h2-weight); font-family: var(--h2-family);}
+h3 { font-size: var(--h3-size); line-height: var(--h3-line); font-weight: var(--h3-weight); font-family: var(--h3-family);}
+h4 { font-size: var(--h4-size); line-height: var(--h4-line); font-weight: var(--h4-weight); font-family: var(--h4-family);}
+h5 { font-size: var(--h5-size); line-height: var(--h5-line); font-weight: var(--h5-weight); font-family: var(--h5-family);}
+h6 { font-size: var(--h6-size); line-height: var(--h6-line); font-weight: var(--h6-weight); font-family: var(--h6-family);}
 
 /* Gör bilder responsiva */
 img {
@@ -89,50 +81,32 @@ html, body {
 
 /* Container för att centrera och begränsa bredden på innehållet */
 .container {
-  width: 100%; /* Full bredd */
-  max-width: 1400px; /* Maxbredd på innehållet */
-  margin-left: auto; /* Centrerar container horisontellt */
-  margin-right: auto; /* Centrerar container horisontellt */
-  padding-left: 1rem; /* Ger inre marginal till vänster */
-  padding-right: 1rem; /* Ger inre marginal till höger */
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* ------------------------- buttons ---------------------------------*/
 
 /* Grundläggande stil för knappar och element med klassen .btn */
-button, .btn {
+button, .btn .body-text-2 {
   display: flex; /* Gör knappar till flexbox-containrar */
   justify-content: center; /* Centrerar innehåll horisontellt */
   align-items: center; /* Centrerar innehåll vertikalt */
   gap: 10px; /* Mellanrum mellan element inuti knappen */
   height: 45px; /* Fast höjd på knappen */
 
-  color: var(--color-button-text); /* Textfärg för knappen */
-  background-color: var(--color-button-background); /* Bakgrundsfärg för knappen */
+  color: var(--secondary); /* Textfärg för knappen */
+  background-color: var(--primary); /* Bakgrundsfärg för knappen */
   padding: 10px 20px; /* Inre marginal (top/bottom: 10px, left/right: 20px) */
   border-radius: 5px; /* Rundar hörnen på knappen */
   text-decoration: none; /* Tar bort understrykning om det är en länk */
+  cursor: pointer;
 
   &:hover {
-    background-color: var(--color-button-hover-background); /* Ändrar bakgrundsfärg vid hover */
-  }
-
-  img {
-    height: 20px; /* Sätter en fast höjd för ikoner i knappar */
-    width: auto; /* Behåller proportionerna på ikoner */
-  }
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+    background-color: var(--color-button-hover-background);
   }
 }
