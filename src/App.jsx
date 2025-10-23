@@ -4,7 +4,7 @@ import Home from "./project/pages/Home";
 export default function App() {
   return (
     <>
-      <Header />
+      <Header/>
       <Home />
     </>
   );

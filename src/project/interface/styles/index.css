@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); /* Importerar Inter-fonten från Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap'); /* Importerar Urbanist-fonten från Google Fonts */
 @import "./header.css";
+@import "./hero.css";
+
 
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
@@ -92,21 +94,14 @@ html, body {
 /* ------------------------- buttons ---------------------------------*/
 
 /* Grundläggande stil för knappar och element med klassen .btn */
-button, .btn .body-text-2 {
-  display: flex; /* Gör knappar till flexbox-containrar */
-  justify-content: center; /* Centrerar innehåll horisontellt */
+button, .btn, .btn-book, .btn-discover {
   align-items: center; /* Centrerar innehåll vertikalt */
-  gap: 10px; /* Mellanrum mellan element inuti knappen */
   height: 45px; /* Fast höjd på knappen */
-
-  color: var(--secondary); /* Textfärg för knappen */
-  background-color: var(--primary); /* Bakgrundsfärg för knappen */
+  background: var(--accent);
+  color: var(--secondary);
   padding: 10px 20px; /* Inre marginal (top/bottom: 10px, left/right: 20px) */
   border-radius: 5px; /* Rundar hörnen på knappen */
   text-decoration: none; /* Tar bort understrykning om det är en länk */
+  border: 0;
   cursor: pointer;
-
-  &:hover {
-    background-color: var(--color-button-hover-background);
-  }
 }

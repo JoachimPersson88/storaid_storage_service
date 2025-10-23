@@ -2,8 +2,6 @@ Header{
   .bg {
     background: var(--secondary);
     color: var(--primary);
-    margin-left: 10px;
-    margin-right: 10px;
     
     .bg-area {
       height: 47px;
@@ -40,7 +38,7 @@ Header{
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     margin-left: 46px;
-    margin-right: 58px;
+    margin-right: 46px;
   
     .navlinks { 
       display:flex; 
@@ -62,10 +60,12 @@ Header{
     }
 
     .btn-book {
-      background: var(--accent);
-      color: var(--secondary);
-      border: 0;
       justify-self:end;
+      
+      &:hover {
+    background-color: var(--color-button-hover-background);
+    color: var(--primary);
+  }
     }
   }
 }
