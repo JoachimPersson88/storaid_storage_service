@@ -1,10 +1,11 @@
 import Hero from "../components/Hero";
+import About_Us from "../components/About_Us";
 
 export default function Home() {
   return (
     <main>
       <Hero/>
-<p>ABOUT US</p>
+      <About_Us/>
 <p>BRAND</p>
 <p>OUR SERVIVCES</p>
 <p>TESTIMONIALS</p>
