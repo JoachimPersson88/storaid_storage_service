@@ -3,6 +3,7 @@ export default function Hero() {
   <section className="hero">
     <div className="container">
       <div className="hero__area">
+
         <h4 className="hero__header">Welcome to StorAid</h4>
         <h1>Space Simplified,
           <br/>
@@ -14,6 +15,7 @@ export default function Hero() {
             libero at iaculis luctus, nisi ex pellentesque nisi, at euismod sem ipsum ac dolor.
             </p>
             <button className="btn-discover body-text-2">Discover More</button>
+
             <img src="/src/project/interface/assets/Image_man.svg" alt=""/>
             </div>
             </div>

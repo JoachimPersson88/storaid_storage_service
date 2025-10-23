@@ -1,0 +1,46 @@
+.hero {
+  padding-top: 100px;
+  background: var(--accent_3); 
+  color: var(--primary);
+  
+  .hero__area { 
+    display:grid;
+    grid-template-areas:
+        "h4   img"
+        "h1    img"
+        "text    img"
+        "discover img"
+        "empty img"; 
+    gap: 30px; 
+    align-items: center;
+    
+    h4 {
+      grid-area: h4; 
+      color: var(--accent); 
+    }
+    
+    h1 {
+      grid-area: h1;  
+      color: var(--color_4); 
+    }
+    
+    .body-text-1{
+      grid-area: text;
+      margin-right: 170px;
+    }
+    
+    img{
+      grid-area: img;
+    }
+    
+    .btn-discover {
+      grid-area: discover;
+      width: 150px;
+      
+      &:hover {
+        background-color: var(--primary);
+        color: var(--secondary);
+      }
+    }
+  }
+}
