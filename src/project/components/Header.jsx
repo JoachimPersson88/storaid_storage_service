@@ -5,11 +5,11 @@ export default function Header() {
         <div className="bg-area">
           <div className="bg-left body-text-4">
             <a className="bg-item">
-              <img src="/src/project/interface/assets/Icon_Phone.svg" alt=""/>
+              <img src="/src/project/interface/ui/Icon_Phone.svg" alt="" />
               +46 8 123 122 44
             </a>
             <a className="bg-item">
-              <img src="/src/project/interface/assets/Icon_Mail.svg" alt=""/>
+              <img src="/src/project/interface/ui/Icon_Mail.svg" alt="" />
               contact@domain.com
             </a>
           </div>
@@ -43,7 +43,7 @@ export default function Header() {
             <a className="link" href="/services">Services</a>
             <a className="link" href="/contact">Contact Us</a>
           </nav>
-            <button className="btn-book body-text-2" type="button">Book Now</button>
+          <button className="btn-book body-text-2" type="button">Book Now</button>
         </div>
       </div>
     </header>

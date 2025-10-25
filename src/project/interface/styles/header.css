@@ -1,8 +1,8 @@
-Header{
+Header {
   .bg {
     background: var(--secondary);
     color: var(--primary);
-    
+
     .bg-area {
       height: 47px;
       display: flex;
@@ -10,28 +10,28 @@ Header{
       justify-content: space-between;
       margin-left: 46px;
       margin-right: 46px;
-      
-      .bg-left { 
-        display:flex;
-        gap:24px; 
-      }
-      
-      .bg-item { 
-        display:inline-flex;
-        gap:8px;
+
+      .bg-left {
+        display: flex;
+        gap: 24px;
       }
 
-      .bg-right { 
-        display:flex;
-        gap:19px;   
+      .bg-item {
+        display: inline-flex;
+        gap: 8px;
+      }
+
+      .bg-right {
+        display: flex;
+        gap: 19px;
       }
 
       .social img {
-        display:flex;
+        display: flex;
       }
     }
   }
-  
+
   .nav-area {
     height: 90px;
     display: grid;
@@ -39,33 +39,33 @@ Header{
     align-items: center;
     margin-left: 46px;
     margin-right: 46px;
-  
-    .navlinks { 
-      display:flex; 
-      gap:34px; 
+
+    .navlinks {
+      display: flex;
+      gap: 34px;
 
       .link {
         text-decoration: none;
         color: var(--secondary);
       }
 
-      .link.is-active { 
-        color: var(--accent); 
+      .link.is-active {
+        color: var(--accent);
       }
     }
-    
+
     img {
       width: 181px;
       height: 59px;
     }
 
     .btn-book {
-      justify-self:end;
-      
+      justify-self: end;
+
       &:hover {
-    background-color: var(--color-button-hover-background);
-    color: var(--primary);
-  }
+        background-color: var(--color-button-hover-background);
+        color: var(--primary);
+      }
     }
   }
 }
