@@ -1,0 +1,96 @@
+/* About Us – stor skärm layout enligt figma */
+.About_Us {
+  background: var(--primary);
+  padding: 48px 56px;
+  margin-top: 30px;
+
+  .about_area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* vänster bild / höger text */
+
+    /* Vänster sida */
+    .about_bg {
+      position: relative;
+      width: 615px;
+      height: 441px;
+
+    }
+
+    .about_left {
+      position: absolute;
+      left: 16px;
+      bottom: -20px;
+      background: var(--secondary);
+      color: var(--primary);
+      border-radius: 10px;
+      padding: 18px 22px;
+      display: flex;
+      gap: 40px;
+
+      .item {
+        justify-items: center;
+      }
+
+    }
+
+
+    /* Höger sida */
+    .about_right {
+
+      .about_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-card {
+        background-color: var(--primary);
+        border: 3px solid var(--color_2);
+        border-radius: 10px;
+        padding: 16px 18px;
+        width: 321px;
+        height: 156px;
+
+        &:hover {
+          background-color: var(--primary);
+          border-color: var(--accent);
+          cursor: pointer;
+        }
+
+        .card-text {
+          margin-top: 20px;
+        }
+      }
+
+      .body-text {
+        margin: 10px 0 10px 0;
+      }
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+
+    .about_grid {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-top: 30px;
+
+      .btn-discover {
+        margin-right: 100px;
+
+        &:hover {
+          background-color: var(--secondary);
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  h2,
+  h4 {
+    color: var(--accent);
+  }
+}
