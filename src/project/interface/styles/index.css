@@ -4,6 +4,8 @@
 @import "./hero.css";
 @import "./about_us.css";
 @import "./brands.css";
+@import "./our_services.css";
+
 
 
 
@@ -80,7 +82,7 @@ img {
 
 /* Smidig övergång för bakgrunds- och textfärger på hela sidan */
 html, body {
-  transition: background-color 0.25s ease, color 0.25s ease; /* Smidig övergång för bakgrunds- och textfärger vid ändring */
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Container för att centrera och begränsa bredden på innehållet */
@@ -97,13 +99,13 @@ html, body {
 
 /* Grundläggande stil för knappar och element med klassen .btn */
 button, .btn, .btn-book, .btn-discover {
-  align-items: center; /* Centrerar innehåll vertikalt */
-  height: 45px; /* Fast höjd på knappen */
+  align-items: center;
+  height: 45px;
   background: var(--accent);
   color: var(--secondary);
-  padding: 10px 20px; /* Inre marginal (top/bottom: 10px, left/right: 20px) */
-  border-radius: 5px; /* Rundar hörnen på knappen */
-  text-decoration: none; /* Tar bort understrykning om det är en länk */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none; 
   border: 0;
   cursor: pointer;
 }
