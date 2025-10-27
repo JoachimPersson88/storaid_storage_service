@@ -1,0 +1,112 @@
+.our_services {
+
+    .container {
+        margin-top: 80px;
+
+        h4 {
+            color: var(--accent);
+        }
+
+        .our_services_area {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            h3 {
+                width: 629px;
+                height: 96px;
+            }
+
+            .body-text {
+                width: 689px;
+                height: 68px;
+            }
+
+            h4 {
+                color: var(--secondary);
+            }
+        }
+
+        .our_services_grid {
+            margin-top: 30px;
+            display: grid;
+            grid-template-areas:
+                "item1 img  item3"
+                "item2  img  item4";
+
+            h4 {
+                margin-bottom: 10px;
+            }
+
+            .item1 {
+                grid-area: item1;
+                background-color: var(--primary);
+                border: 3px solid var(--color_2);
+                border-radius: 10px;
+                padding: 16px 16px 16px 16px;
+                width: 321px;
+                height: 156px;
+
+                &:hover {
+                    background-color: var(--primary);
+                    border-color: var(--accent);
+                    cursor: pointer;
+                }
+            }
+
+            .item2 {
+                grid-area: item2;
+                background-color: var(--primary);
+                border: 3px solid var(--color_2);
+                border-radius: 10px;
+                padding: 16px 16px 16px 16px;
+                width: 321px;
+                height: 156px;
+
+                &:hover {
+                    background-color: var(--primary);
+                    border-color: var(--accent);
+                    cursor: pointer;
+                }
+            }
+
+            .item3 {
+                grid-area: item3;
+                background-color: var(--primary);
+                border: 3px solid var(--color_2);
+                border-radius: 10px;
+                padding: 16px 16px 16px 16px;
+                width: 321px;
+                height: 156px;
+
+                &:hover {
+                    background-color: var(--primary);
+                    border-color: var(--accent);
+                    cursor: pointer;
+                }
+            }
+
+            .item4 {
+                grid-area: item4;
+                background-color: var(--primary);
+                border: 3px solid var(--color_2);
+                border-radius: 10px;
+                padding: 16px 16px 16px 16px;
+                width: 321px;
+                height: 156px;
+
+                &:hover {
+                    background-color: var(--primary);
+                    border-color: var(--accent);
+                    cursor: pointer;
+                }
+            }
+
+            img {
+                grid-area: img;
+                width: 519px;
+                height: 327px;
+            }
+        }
+    }
+}
