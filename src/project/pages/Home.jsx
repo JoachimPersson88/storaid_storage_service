@@ -1,12 +1,13 @@
 import Hero from "../components/Hero";
 import About_Us from "../components/About_Us";
+import Brands from "../components/Brands";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <About_Us />
-      <p>BRAND</p>
+      <Brands />
       <p>OUR SERVIVCES</p>
       <p>TESTIMONIALS</p>
       <p>WHY CHOOSE US</p>
