@@ -5,8 +5,7 @@
 @import "./about_us.css";
 @import "./brands.css";
 @import "./our_services.css";
-
-
+@import "./testimonials.css";
 
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
