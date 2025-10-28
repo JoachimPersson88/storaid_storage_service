@@ -1,0 +1,40 @@
+.testimonials {
+    
+    .container {
+        
+        .testimonials_area {
+            h4 {}
+            h3 {}
+            .body-text {}
+        }
+
+        .testimonials_grid {
+            .item1 {
+                .stars {}
+                .body-text {}
+                .avatar {}
+                h6 {}
+                .role {}
+                .quotes {}
+            }
+
+            .item2 {
+                .stars {}
+                .body-text {}
+                .avatar {}
+                h6 {}
+                .role {}
+                .quotes {}
+            }
+
+            .item3 {
+                .stars {}
+                .body-text {}
+                .avatar {}
+                h6 {}
+                .role {}
+                .quotes {}
+            }
+        }
+    }
+}
