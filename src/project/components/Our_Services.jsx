@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function Our_Services() {
     return (
         <section className="our_services">
             <div className="container">
