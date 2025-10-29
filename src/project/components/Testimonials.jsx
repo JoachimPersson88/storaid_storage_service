@@ -27,7 +27,7 @@ export default function Testimonials() {
                             <div className="author">
                             <img className="avatar" src="/src/project/interface/assets/avatar.svg" alt="" />
                             <div>
-                            <h6>Celvin Gabriel</h6>
+                            <h6>Aiden Harvey</h6>
                             <p className="role">Customer</p>
                             </div>
                             <img className="quotes" src="/src/project/interface/ui/quotes.svg" alt="" />
@@ -44,7 +44,7 @@ export default function Testimonials() {
                             <div className="author">
                             <img className="avatar" src="/src/project/interface/assets/avatar.svg" alt="" />
                             <div>
-                            <h6>Celvin Gabriel</h6>
+                            <h6>Carrisa Jocelyn</h6>
                             <p className="role">Customer</p>
                             </div>
                             <img className="quotes" src="/src/project/interface/ui/quotes.svg" alt="" />
