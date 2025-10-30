@@ -51,18 +51,18 @@ export default function Why_Choose_Us() {
               </div>
             </li>
           </ul>
-
-          <div className="wcu_grid">
-            <p className="body-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui
-              lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue.
-              Phasellus eget elit gravida.
-            </p>
-
-            <img src="/src/project/interface/assets/bg_img.svg" alt="" />
-          </div>
         </div>
-        
+
+        <div className="wcu_item">
+          <p className="body-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui
+            lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue.
+            Phasellus eget elit gravida.
+          </p>
+
+          <img src="/src/project/interface/assets/bg_img.svg" alt="" />
+        </div>
+
       </div>
     </section>
   );
