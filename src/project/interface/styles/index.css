@@ -7,6 +7,7 @@
 @import "./our_services.css";
 @import "./testimonials.css";
 @import "./why_choose_us.css";
+@import "./pricing_plan.css";
 
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
