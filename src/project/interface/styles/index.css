@@ -8,6 +8,7 @@
 @import "./testimonials.css";
 @import "./why_choose_us.css";
 @import "./pricing_plan.css";
+@import "./price_list.css";
 
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
@@ -99,7 +100,7 @@ html, body {
 /* ------------------------- buttons ---------------------------------*/
 
 /* Grundläggande stil för knappar och element med klassen .btn */
-button, .btn, .btn-book, .btn-discover {
+button, .btn, .btn-book, .btn-discover, .btn-rent {
   align-items: center;
   height: 45px;
   background: var(--accent);
@@ -109,4 +110,8 @@ button, .btn, .btn-book, .btn-discover {
   text-decoration: none; 
   border: 0;
   cursor: pointer;
+  font-size: var(--body2-size); 
+  line-height: var(--body2-line); 
+  font-weight: var(--body2-weight); 
+  font-family: var(--body2-family);
 }

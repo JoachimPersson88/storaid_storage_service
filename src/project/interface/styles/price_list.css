@@ -1,0 +1,75 @@
+.price_card {
+  background: var(--color_4);
+  border: 2px solid var(--color_2);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 320px;
+  color: var(--color-heading-text);
+
+  &:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+
+  h5 {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .price-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    color: var(--accent);
+  }
+
+  h6 {
+    padding: 20px 0 0 0;
+  }
+
+  /* horisontell linje */
+  .rule {
+    border: 0;
+    height: 1px;
+    background: var(--secondary);
+    margin: 16px 0 16px 0;
+  }
+}
+
+.list {
+  margin: 0 0 18px 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+
+  li {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 10px;
+    align-items: start;
+
+    /* --- Fick ta hjälp av chatGPT här --- */
+    /* --- IKONEN (mask + variabelfärg) --- */
+    .check-icon {
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+      /* använd SVG som mask */
+      mask: url("/src/project/interface/ui/Check.svg") no-repeat center;
+      background-color: var(--secondary);
+    }
+  }
+}
+
+.price_card:hover .check-icon {
+  background-color: var(--accent);
+}
+
+.price_card:hover .rule {
+  background-color: var(--primary);
+}
