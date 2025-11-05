@@ -1,6 +1,17 @@
-.pricing_plan { padding: 40px 0 64px; }
-.pricing_grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 28px;
+.pricing_plan {
+  padding: 40px 0 64px;
+
+  .header {
+    color: var(--accent);
+  }
+
+  .headline {
+    margin: 20px 0 20px 0;
+  }
+
+  .pricing_grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px;
+  }
 }
