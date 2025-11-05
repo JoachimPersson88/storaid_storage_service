@@ -1,0 +1,27 @@
+.looking_for_service {
+    background-color: var(--accent_3);
+    padding: 80px 80px;
+    text-align: center;
+
+    .container {
+        max-width: 1200px;
+        
+        .header {
+            color: var(--primary);
+            margin-bottom: 20px;
+            
+        }
+
+        .body-text {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .btn-book {
+            &:hover{
+                background-color: var(--primary);
+                color: var(--secondary);
+            }
+        }
+    }
+}
