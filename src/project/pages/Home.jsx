@@ -5,6 +5,7 @@ import Our_Services from "../components/Our_Services";
 import Testimonials from "../components/Testimonials";
 import Why_Choose_Us from "../components/Why_Choose_Us";
 import Pricing_Plan from "../components/Pricing_Plan";
+import Looking_For_Secure from "../components/Looking_For_Secure";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Testimonials />
       <Why_Choose_Us />
       <Pricing_Plan />
-      <p>LOOKING FOR SECURE</p>
+      <Looking_For_Secure/>
       <p>LATEST BLOG AND NEWS</p>
       <p>SUBSCRIBE OUR NEWSLETTER</p>
       <p>FOOTER</p>

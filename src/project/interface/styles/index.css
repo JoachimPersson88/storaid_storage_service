@@ -9,7 +9,7 @@
 @import "./why_choose_us.css";
 @import "./pricing_plan.css";
 @import "./price_list.css";
-
+@import "./looking_for_secure.css";
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
 *, *::before, *::after {    
