@@ -16,7 +16,7 @@ export default function Card({
                 </p>
             </div>
 
-            <h4>{title}</h4>
+            <h6>{title}</h6>
 
             <p className="body-text">
                 {text}

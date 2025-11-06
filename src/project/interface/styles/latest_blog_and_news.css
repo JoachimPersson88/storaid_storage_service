@@ -1,0 +1,25 @@
+.latest_blog_and_news {
+    padding: 56px 0 72px 0;
+
+    .header {
+        color: var(--accent);
+        margin-bottom: 12px;
+    }
+
+    .header_area {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        align-items: end;
+        margin-bottom: 28px;
+
+        .body-text{
+            max-width: 640px;
+        }
+    }
+
+    .card_grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
