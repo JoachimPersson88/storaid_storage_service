@@ -11,6 +11,8 @@
 @import "./price_list.css";
 @import "./looking_for_secure.css";
 @import "./latest_blog_and_news.css";
+@import "./card.css";
+
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
 *, *::before, *::after {    
