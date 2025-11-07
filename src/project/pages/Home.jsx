@@ -7,6 +7,7 @@ import Why_Choose_Us from "../components/Why_Choose_Us";
 import Pricing_Plan from "../components/Pricing_Plan";
 import Looking_For_Secure from "../components/Looking_For_Secure";
 import Latest_Blog_and_News from "../components/Latest_Blog_and_News";
+import Subscribe_Our_Newsletter from "../components/Subscribe_Our_Newsletter";
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       <Pricing_Plan />
       <Looking_For_Secure/>
       <Latest_Blog_and_News/>
-      <p>SUBSCRIBE OUR NEWSLETTER</p>
+      <Subscribe_Our_Newsletter/>
       <p>FOOTER</p>
     </main>
   );
 }
+

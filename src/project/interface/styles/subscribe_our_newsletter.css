@@ -1,0 +1,33 @@
+.subscribe {
+  background: var(--color_3);
+
+  .subscribe-area {
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    .headline {
+      margin: 20px 0 20px 0;
+    }
+
+    .subscribe_form {
+      display: grid;
+      grid-template-columns: 540px auto;
+      gap: 12px;
+      max-width: 720px;
+      color: var(--accent);
+      padding: 40px 40px 40px 0;
+    }
+
+    .subscribe_input {
+      height: 60px;
+      border: 1px solid var(--accent);
+      border-radius: 5px;
+      padding: 0 40px;
+      background: var(--primary);
+    }
+
+    .subscribe-btn {
+      height: 60px;
+    }
+  }
+}

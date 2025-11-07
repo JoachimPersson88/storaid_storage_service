@@ -12,7 +12,7 @@
 @import "./looking_for_secure.css";
 @import "./latest_blog_and_news.css";
 @import "./card.css";
-
+@import "./subscribe_our_newsletter.css";
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
 *, *::before, *::after {    
@@ -103,7 +103,7 @@ html, body {
 /* ------------------------- buttons ---------------------------------*/
 
 /* Grundläggande stil för knappar och element med klassen .btn */
-button, .btn, .btn-book, .btn-discover, .btn-rent {
+button, .btn, .btn-book, .btn-discover, .btn-rent, .subscribe-btn {
   align-items: center;
   height: 45px;
   background: var(--accent);
