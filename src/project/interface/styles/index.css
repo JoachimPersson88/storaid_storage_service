@@ -13,6 +13,8 @@
 @import "./latest_blog_and_news.css";
 @import "./card.css";
 @import "./subscribe_our_newsletter.css";
+@import "./footer.css";
+
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
 *, *::before, *::after {    

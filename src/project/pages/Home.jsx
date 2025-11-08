@@ -8,21 +8,22 @@ import Pricing_Plan from "../components/Pricing_Plan";
 import Looking_For_Secure from "../components/Looking_For_Secure";
 import Latest_Blog_and_News from "../components/Latest_Blog_and_News";
 import Subscribe_Our_Newsletter from "../components/Subscribe_Our_Newsletter";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <About_Us />
-      <Brands />
-      <Our_Services />
-      <Testimonials />
-      <Why_Choose_Us />
-      <Pricing_Plan />
+      <Hero/>
+      <About_Us/>
+      <Brands/>
+      <Our_Services/>
+      <Testimonials/>
+      <Why_Choose_Us/>
+      <Pricing_Plan/>
       <Looking_For_Secure/>
       <Latest_Blog_and_News/>
       <Subscribe_Our_Newsletter/>
-      <p>FOOTER</p>
+      <Footer/>
     </main>
   );
 }
