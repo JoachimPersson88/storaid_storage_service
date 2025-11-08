@@ -1,0 +1,36 @@
+.footer {
+    background: var(--secondary);
+    padding: 14px 0;
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .copyright {
+        margin: 0;
+        line-height: 1.8;
+    }
+
+    .legal {
+        display: inline-flex;
+        align-items: center;
+        gap: 28px;
+        padding-right: 40px;
+    }
+
+    .body-text {
+        color: var(--primary);
+        text-decoration: none;
+        gap: 10px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}
