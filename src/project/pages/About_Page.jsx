@@ -8,6 +8,18 @@ import About_Us from "../components/About_Us";
 export default function About_Page() {
   return (
     <>
+    <section className="page">
+      <div className="container">
+        <h1>
+         About Us 
+        </h1>
+        <p className="body-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </div>
+      
+    </section>
       {/* Återanvända sektioner */}
       <About_Us />
       <Brands />

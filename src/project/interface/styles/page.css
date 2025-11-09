@@ -1,0 +1,14 @@
+.page {
+    background-color: var(--accent_3);
+    .container {
+        padding: 200px 0 200px 0;
+        h1 {
+            color: var(--color_3);
+            margin-bottom: 30px;
+        }
+        .body-text {
+            color: var(--color_4);
+            max-width: 600px;
+        }
+    }
+}
