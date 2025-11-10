@@ -4,6 +4,7 @@ import Header from "./project/components/Header";
 import Home from "./project/pages/Home";
 import About_Page from "./project/pages/About_Page";
 import Services_Page from "./project/pages/Services_Page";
+import Contact_Page from "./project/pages/Contact_Page";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About_Page/>} />
         <Route path="/services" element={<Services_Page/>} />
+        <Route path="/contact" element={<Contact_Page/>} />
       </Routes>
     </BrowserRouter>
   );
