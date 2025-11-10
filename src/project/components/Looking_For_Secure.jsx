@@ -1,4 +1,4 @@
-export default function Looking_For_Service() {
+export default function Looking_For_Secure() {
     return (
         <section className="looking_for_service">
             <div className="container">

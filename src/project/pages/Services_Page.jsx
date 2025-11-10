@@ -1,17 +1,17 @@
 import Brands from "../components/Brands";
 import Testimonials from "../components/Testimonials";
-import Why_Choose_Us from "../components/Why_Choose_Us";
 import Subscribe_Our_Newsletter from "../components/Subscribe_Our_Newsletter";
 import Footer from "../components/Footer";
-import About_Us from "../components/About_Us";
+import Our_Services from "../components/Our_Services";
+import Looking_For_Secure from "../components/Looking_For_Secure";
 
-export default function About_Page() {
+export default function Services_Page() {
   return (
     <>
     <section className="page">
       <div className="container">
         <h1>
-         About Us 
+         Services 
         </h1>
         <p className="body-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -20,10 +20,10 @@ export default function About_Page() {
       </div>
       
     </section>
-      <About_Us />
-      <Brands />
+      <Our_Services />
       <Testimonials />
-      <Why_Choose_Us />
+      FAQ
+      <Looking_For_Secure />
       <Subscribe_Our_Newsletter />
       <Footer />
     </>
