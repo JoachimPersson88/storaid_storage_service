@@ -5,10 +5,12 @@ import Home from "./project/pages/Home";
 import About_Page from "./project/pages/About_Page";
 import Services_Page from "./project/pages/Services_Page";
 import Contact_Page from "./project/pages/Contact_Page";
+import Booking_Page from "./project/pages/Booking_Page";
 
 export default function App() {
   return (
     <BrowserRouter>
+    
       {/* Header visas på alla sidor */}
       <Header />
 
@@ -18,7 +20,9 @@ export default function App() {
         <Route path="/about" element={<About_Page/>} />
         <Route path="/services" element={<Services_Page/>} />
         <Route path="/contact" element={<Contact_Page/>} />
+        <Route path="/booking" element={<Booking_Page/>} />
       </Routes>
+
     </BrowserRouter>
   );
 }
