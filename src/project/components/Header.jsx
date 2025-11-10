@@ -1,27 +1,31 @@
-// Header.jsx
 import { NavLink, Link } from "react-router-dom";
+//komponenter som är hämtade från reacts bibliotek
 
 export default function Header() {
   return (
     <header>
-      <div className="bg">
-        <div className="bg-area">
-          <div className="bg-left body-text-4">
-            <a className="bg-item">
+      {/* Topbar */}
+      <div className="topbar">
+        <div className="topbar_area">
+          
+          {/* Kontakt */}
+          <div className="contact body-text-4">
+            <a className="contact_item">
               <img src="/src/project/interface/ui/Icon_Phone.svg" alt="" />
               +46 8 123 122 44
             </a>
-            <a className="bg-item">
+            <a className="contact_item">
               <img src="/src/project/interface/ui/Icon_Mail.svg" alt="" />
               contact@domain.com
             </a>
           </div>
-
-          <div className="bg-right">
+          
+          {/* Sociala medier */}
+          <div className="media">
             <a className="social" href="https://www.facebook.com/StorAid" aria-label="Facebook">
               <img src="/src/project/interface/ui/Facebook.svg" alt="" />
             </a>
-            <a className="social" href="https://www.x.com/StorAid" aria-label="X">
+            <a className="social" href="https://www.facebook.com/StorAid" aria-label="X">
               <img src="/src/project/interface/ui/Humble.svg" alt="" />
             </a>
             <a className="social" href="https://www.instagram.com/StorAid" aria-label="Instagram">
@@ -33,20 +37,26 @@ export default function Header() {
           </div>
         </div>
       </div>
-
+      
+      {/* Navbar */}
       <div className="navbar">
-        <div className="nav-area">
-          {/* Logo -> Link så vi slipper full reload */}
+        <div className="nav_area">
+          
+          {/* Logo */}
           <Link to="/">
             <img src="/src/project/interface/assets/Logo.svg" alt="StorAid logo" />
           </Link>
-
+          
+          {/* Länkar till sidorna */}
           <nav className="navlinks body-text-3">
             <NavLink
               to="/"
-              end
               className={({ isActive }) => (isActive ? "link is-active" : "link")}
-            >
+              /*
+              Denna funktion tar emot ett objekt som innehåller egenskapen isActive. 
+              isActive är ett booleskt värde (true eller false) som avgör om länken är aktiv eller inte.
+              */
+              >
               Home
             </NavLink>
 
@@ -71,8 +81,10 @@ export default function Header() {
               Contact Us
             </NavLink>
           </nav>
-
+          
+          {/* Bokning */}
           <Link to="/booking" className="btn-book body-text-2">Book Now</Link>
+
         </div>
       </div>
     </header>

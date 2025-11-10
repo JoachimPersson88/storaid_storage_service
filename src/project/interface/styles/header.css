@@ -1,9 +1,9 @@
 Header {
-  .bg {
+  .topbar {
     background: var(--secondary);
     color: var(--primary);
 
-    .bg-area {
+    .topbar_area {
       height: 47px;
       display: flex;
       align-items: center;
@@ -11,28 +11,28 @@ Header {
       margin-left: 46px;
       margin-right: 46px;
 
-      .bg-left {
+      .contact {
         display: flex;
         gap: 24px;
       }
 
-      .bg-item {
+      .contact_item {
         display: inline-flex;
         gap: 8px;
       }
 
-      .bg-right {
+      .media {
         display: flex;
         gap: 19px;
       }
 
-      .social img {
+      .social {
         display: flex;
       }
     }
   }
 
-  .nav-area {
+  .nav_area {
     height: 90px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -43,6 +43,7 @@ Header {
     .navlinks {
       display: flex;
       gap: 34px;
+        text-decoration: none;
 
       .link {
         text-decoration: none;
