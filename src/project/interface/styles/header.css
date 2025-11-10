@@ -54,10 +54,6 @@ Header {
       }
     }
 
-    img {
-      width: 181px;
-      height: 59px;
-    }
 
     .btn-book {
       justify-self: end;

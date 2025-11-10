@@ -1,3 +1,6 @@
+// Header.jsx
+import { NavLink, Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header>
@@ -15,16 +18,16 @@ export default function Header() {
           </div>
 
           <div className="bg-right">
-            <a className="social" href="#" aria-label="Facebook">
+            <a className="social" href="https://www.facebook.com/StorAid" aria-label="Facebook">
               <img src="/src/project/interface/ui/Facebook.svg" alt="" />
             </a>
-            <a className="social" href="#" aria-label="X">
+            <a className="social" href="https://www.x.com/StorAid" aria-label="X">
               <img src="/src/project/interface/ui/Humble.svg" alt="" />
             </a>
-            <a className="social" href="#" aria-label="Instagram">
+            <a className="social" href="https://www.instagram.com/StorAid" aria-label="Instagram">
               <img src="/src/project/interface/ui/Instagram.svg" alt="" />
             </a>
-            <a className="social" href="#" aria-label="YouTube">
+            <a className="social" href="https://www.youtube.com/StorAid" aria-label="YouTube">
               <img src="/src/project/interface/ui/Youtube.svg" alt="" />
             </a>
           </div>
@@ -33,17 +36,43 @@ export default function Header() {
 
       <div className="navbar">
         <div className="nav-area">
-          <a href="/">
+          {/* Logo -> Link så vi slipper full reload */}
+          <Link to="/">
             <img src="/src/project/interface/assets/Logo.svg" alt="StorAid logo" />
-          </a>
+          </Link>
 
-          <nav className="navlinks body-text-3" aria-label="Primary">
-            <a className="link is-active" href="/">Home</a>
-            <a className="link" href="/about">About Us</a>
-            <a className="link" href="/services">Services</a>
-            <a className="link" href="/contact">Contact Us</a>
+          <nav className="navlinks body-text-3">
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) => (isActive ? "link is-active" : "link")}
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "link is-active" : "link")}
+            >
+              About Us
+            </NavLink>
+
+            <NavLink
+              to="/services"
+              className={({ isActive }) => (isActive ? "link is-active" : "link")}
+            >
+              Services
+            </NavLink>
+
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "link is-active" : "link")}
+            >
+              Contact Us
+            </NavLink>
           </nav>
-          <button className="btn-book body-text-2" type="button">Book Now</button>
+
+          <Link to="/booking" className="btn-book body-text-2">Book Now</Link>
         </div>
       </div>
     </header>
