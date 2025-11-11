@@ -53,7 +53,7 @@ export default function Testimonials() {
                     {/* Namn och roll */}
                     <div>
                       <h6>{testimonials.name}</h6>
-                      <p className="role">{testimonials.companyName}</p>
+                      <p className="role body-text">{testimonials.companyName}</p>
                     </div>
 
                     <img className="quotes" src="/src/project/interface/ui/quotes.svg" alt="" />

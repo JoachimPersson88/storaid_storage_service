@@ -1,12 +1,9 @@
-
 .testimonials::after {
     content: "";
     position: absolute;
     inset: 0;
     background: var(--accent_3);
 }
-
-
 
 .testimonials {
     margin-top: 80px;
@@ -32,7 +29,6 @@
                 color: var(--accent);
                 margin-bottom: 20px;
                 text-align: center;
-
             }
 
             h3 {
@@ -43,7 +39,6 @@
             .body-text {
                 margin-bottom: 20px;
                 text-align: center;
-
             }
 
             .testimonials_grid {
@@ -81,13 +76,10 @@
                         }
 
                         .role {
-                            margin-top: 5px;
-                            line-height: 14px;
-                            font-size: 14px;
+                            display: inline;
                             color: var(--secondary);
-                            font-family: 'Inter';
+                            font-size: 14px;
                         }
-
                     }
                 }
             }
