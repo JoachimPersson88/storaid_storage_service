@@ -1,5 +1,4 @@
-/* Fick hjälp av chatGPT med denna biten */
-/* Grön overlay ovanpå bilden */
+
 .testimonials::after {
     content: "";
     position: absolute;
@@ -7,13 +6,7 @@
     background: var(--accent_3);
 }
 
-/*
-Detta gör:
-- Bilden ligger absolut under allt (z-index:0).
-- En grön overlay läggs ovanpå bilden (::after, z-index:1).
-- Ditt innehåll ligger överst (z-index:2).
-- Färger/typografi kommer från dina tokens.
-*/
+
 
 .testimonials {
     margin-top: 80px;
@@ -21,8 +14,6 @@ Detta gör:
     padding: 70px 0;
     color: var(--primary);
 
-    /* Fick hjälp av chatGPT med denna biten */
-    /* Bakgrundsbilden täcker hela sektionen */
     .Bg {
         position: absolute;
         inset: 0;
@@ -63,7 +54,7 @@ Detta gör:
                 .item {
                     background: var(--primary);
                     color: var(--secondary);
-                    padding: 40px 20px 0 20px;
+                    padding: 20px 20px 0 20px;
                     border-radius: 10px;
 
                     .stars {
@@ -76,6 +67,7 @@ Detta gör:
 
                     .body-text {
                         text-align: left;
+                        max-width: 350px;
                     }
 
                     .author {
@@ -83,6 +75,10 @@ Detta gör:
                         align-items: center;
                         gap: 22px;
                         margin-bottom: 20px;
+
+                        .avatar {
+                            border-radius: 100%;
+                        }
 
                         .role {
                             margin-top: 5px;
