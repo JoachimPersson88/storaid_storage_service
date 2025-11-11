@@ -11,7 +11,7 @@ export async function fetchBlogs() {
 
         return await res.json();
     } catch (err) {
-        console.error("fetchTestimonials failed:", err);
+        console.error("fetchBlogs failed:", err);
         return [];
     }
 }

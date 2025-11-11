@@ -1,30 +1,27 @@
-// Enkel, återanvändbar blog card-komponent
 export default function Card({
-    date = "August 17, 2025",
-    title = "Safe and Secure: The Importance of Choosing the Right Storage",
-    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a sem magna. Etiam ac odio sit amet lorem...",
-    link = "#"
+  created = "",
+  title = "",
+  description = "",
+  imageUrl = ""
 }) {
-    return (
-        <div className="card">
-            <img className="card_img" src="/src/project/interface/assets/Card_Img.svg" alt="" />
+  const imgSrc = imageUrl || "/src/project/interface/assets/Card_Img.svg";
 
-            <div className="date">
-                <img src="/src/project/interface/ui/Calendar.svg" alt="" />
-                <p className="body-text-4">
-                    {date}
-                </p>
-            </div>
+  return (
+    <div className="card">
+      <img className="card_img" src={imgSrc} alt={title} />
 
-            <h6>{title}</h6>
+      <div className="date">
+        <img src="/src/project/interface/ui/Calendar.svg" alt="" />
+        <p className="body-text-4">{created}</p>
+      </div>
 
-            <p className="body-text">
-                {text}
-            </p>
+      <h6>{title}</h6>
 
-            <a className="read_more body-text" href={link}>
-                Read more →
-            </a>
-        </div>
-    );
+      <p className="body-text">{description}</p>
+
+      <a className="read_more body-text" href={imageUrl || "#"} target="_blank" rel="noreferrer">
+        Read more →
+      </a>
+    </div>
+  );
 }
