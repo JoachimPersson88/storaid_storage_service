@@ -7,22 +7,23 @@ export default function Latest_Blog_and_News() {
   const [posts, setPosts] = useState([]);
 
   // Hämtar bloggar och lägger dem i state (ex. topp 3)
-useEffect(() => {
-  fetchBlogs() // Anropa API-funktionen som hämtar bloggar (returnerar ett Promise)
-    .then(data => { // När hämtningen lyckas får vi 'data' (förväntas vara en array)
-      const firstThree = Array.isArray(data) // Säkerställ att vi verkligen fick en array
-        ? data.slice(0, 3) // Ta de tre första inläggen
-        : []; // Annars: fall tillbaka till tom lista
+  useEffect(() => {
+    fetchBlogs() // Anropa API-funktionen som hämtar bloggar (returnerar ett Promise)
+      .then(data => { // När hämtningen lyckas får vi 'data' (förväntas vara en array)
+        const firstThree = Array.isArray(data) // Säkerställ att vi verkligen fick en array
+          ? data.slice(0, 3) // Ta de tre första inläggen
+          : []; // Annars: fall tillbaka till tom lista
 
-      setPosts( // Uppdatera state med bearbetad lista
-        firstThree.map(blog => ({ // Gå igenom varje blog-objekt och skapa ett nytt objekt
-          ...blog, // Kopiera alla befintliga fält med spread-operatorn
-          created: (blog.created) // (Här kan du formattera datum om du vill; nu behålls originalet)
-        }))
-      );
-    })
-    .catch(() => setPosts([])) // Vid fel: nollställ listan så UI:et inte kraschar
-}, []); // Tom array => effekten körs endast vid mount
+        setPosts( // Uppdatera state med bearbetad lista
+          firstThree.map(blog => ({ // Gå igenom varje blog-objekt och skapa ett nytt objekt
+            ...blog, // Kopiera alla befintliga fält med spread-operatorn
+            created: (blog.created).split("T")[0], // Split tar bort eller klipper av T;et och det som kommer efter
+
+          }))
+        );
+      })
+      .catch(() => setPosts([])) // Vid fel nollställs listan så UI:et inte kraschar
+  }, []); // Tom array => effekten körs endast vid mount
 
 
   return (
