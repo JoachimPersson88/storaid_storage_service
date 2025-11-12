@@ -36,10 +36,9 @@
     }
 }
 
-/* symmetriskt över alla kort */
 .card .body-text.snap {
-  max-height: calc(20px * 2.5); /* hur mycket det ska klippas */
-  overflow: hidden; /* döljer resterande texten */
+  max-height: calc(20px * 2.5);
+  overflow: hidden;
 }
 
 .card .read_more {

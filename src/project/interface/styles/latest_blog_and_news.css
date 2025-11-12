@@ -21,6 +21,6 @@
     .card_grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        align-items: start; /* låter kortens höjd styras av innehållet, tex. när jag klickar på read more */
+        align-items: start; 
     }
 }
