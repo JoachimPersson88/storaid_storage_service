@@ -9,6 +9,11 @@
     max-width: 420px;
     margin-top: 20px;
     
+    &:hover{
+      background-color: var(--color_4);
+      color: var(--secondary);
+    }
+
     .card_img {
         border-radius: 5px;
         align-self: center;
@@ -27,5 +32,17 @@
         align-items: center;
         gap: 6px;
         padding-bottom: 20px;
+        cursor: pointer;
     }
 }
+
+/* symmetriskt över alla kort */
+.card .body-text.snap {
+  max-height: calc(20px * 2.5); /* hur mycket det ska klippas */
+  overflow: hidden; /* döljer resterande texten */
+}
+
+.card .read_more {
+  cursor: pointer;
+}
+

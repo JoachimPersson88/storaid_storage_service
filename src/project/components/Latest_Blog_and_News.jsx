@@ -3,27 +3,25 @@ import { fetchBlogs } from "../api/blogs";
 import Card from "./Card";
 
 export default function Latest_Blog_and_News() {
-  // posts = lista med bloggar, setPosts = uppdatera listan
   const [posts, setPosts] = useState([]);
 
-  // Hämtar bloggar och lägger dem i state (ex. topp 3)
   useEffect(() => {
-    fetchBlogs() // Anropa API-funktionen som hämtar bloggar (returnerar ett Promise)
-      .then(data => { // När hämtningen lyckas får vi 'data' (förväntas vara en array)
-        const firstThree = Array.isArray(data) // Säkerställ att vi verkligen fick en array
-          ? data.slice(0, 3) // Ta de tre första inläggen
-          : []; // Annars: fall tillbaka till tom lista
+    fetchBlogs()
+      .then(data => {
+        const firstThree = Array.isArray(data)
+          ? data.slice(0, 3)
+          : [];
 
-        setPosts( // Uppdatera state med bearbetad lista
-          firstThree.map(blog => ({ // Gå igenom varje blog-objekt och skapa ett nytt objekt
-            ...blog, // Kopiera alla befintliga fält med spread-operatorn
-            created: (blog.created).split("T")[0], // Split tar bort eller klipper av T;et och det som kommer efter
+        setPosts(
+          firstThree.map(blog => ({
+            ...blog,
+            created: (blog.created).split("T")[0],
 
           }))
         );
       })
-      .catch(() => setPosts([])) // Vid fel nollställs listan så UI:et inte kraschar
-  }, []); // Tom array => effekten körs endast vid mount
+      .catch(() => setPosts([]))
+  }, []);
 
 
   return (

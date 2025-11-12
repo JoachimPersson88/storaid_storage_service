@@ -1,9 +1,13 @@
+import { useState } from "react";
+
 export default function Card({
   created = "",
   title = "",
   description = "",
   imageUrl = ""
 }) {
+  const [expanded, setExpanded] = useState(false);
+
   const imgSrc = imageUrl || "/src/project/interface/assets/Card_Img.svg";
 
   return (
@@ -17,10 +21,19 @@ export default function Card({
 
       <h6>{title}</h6>
 
-      <p className="body-text">{description}</p>
+      <p className={`body-text ${expanded ? "" : "snap"}`}>
+        {description}
+      </p>
 
-      <a className="read_more body-text" href={imageUrl || "#"} target="_blank" rel="noreferrer">
-        Read more →
+      <a
+        className="read_more body-text"
+        onClick={(read) => {
+          read.preventDefault();
+          setExpanded((v) => !v);
+        }}
+        aria-expanded={expanded}
+      >
+        {expanded ? "Read less" : "Read more"} →
       </a>
     </div>
   );

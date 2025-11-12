@@ -11,10 +11,8 @@ export default function App() {
   return (
     <BrowserRouter>
     
-      {/* Header visas på alla sidor */}
       <Header />
 
-      {/* Sidbyten sker här */}
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About_Page/>} />
