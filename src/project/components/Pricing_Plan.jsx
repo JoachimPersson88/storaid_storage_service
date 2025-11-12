@@ -2,7 +2,6 @@ import Price_List from "./Price_List";
 
 export default function Pricing_Plan() {
   
-  // Gemensam lista med features som alla kort kan använda
   const baseFeatures = [
     "Nam nec ipsum in dolor",
     "Fusce nec ligula ut arcu",
@@ -11,7 +10,7 @@ export default function Pricing_Plan() {
     "Etiam eget libero non ligula",
     
   ];
-  // Data för alla plan: titel, pris, tidsenhet och vilka features som ska visas
+
   const plans = [
     { title: "Small Unit", price: 50, per: "/month", list: baseFeatures },
     { title: "Medium Unit", price: 100, per: "/month", list: baseFeatures },
@@ -31,8 +30,6 @@ export default function Pricing_Plan() {
         </h3>
         <div className="pricing_grid">
           {plans.map((p, i) => (
-            // Sprider ut (spread) plan-objektets fält som props till Price_List
-            // key=i behövs för Reacts list-rendering
             <Price_List key={i} {...p} />
           ))}
         </div>

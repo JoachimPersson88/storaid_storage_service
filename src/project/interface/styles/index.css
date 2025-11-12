@@ -18,15 +18,12 @@
 @import "./booking_unit.css";
 
 
-/* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
 *, *::before, *::after {    
-  box-sizing: border-box; /* Inkluderar padding och border i elementets totala storlek */
-  margin: 0; /* Tar bort standardmarginaler på alla element */
+  box-sizing: border-box;
+  margin: 0;
 }
 
-/* Definierar CSS-variabler för färger och teman */
 :root {
-  /* Grundfärger*/
   --primary:rgba(255, 255, 255, 1);
   --secondary:rgba(18, 55, 42, 1);
   --accent:rgba(241, 195, 12, 1);
@@ -36,13 +33,11 @@
   --color_3:rgba(250, 248, 236, 1);
   --color_4:rgba(241, 255, 234, 1);
   
-  /* Grundinställningar för knapp */
   --color-button-text: rgba(18, 55, 42, 1);
   --color-button-background: var(--primary); 
   --color-button-hover-text: var(--primary);
   --color-button-hover-background: var(--secondary);
 
-  /* Grundinställningar för rubriker, storlek, höjd och tjocklek */
   --h1-size: 80px; --h1-line: 80px; --h1-weight: 700; --h1-family: "Inter";
   --h2-size: 64px; --h2-line: 80px; --h2-weight: 800; --h2-family: "Urbanist";
   --h3-size: 52px; --h3-line: 52px; --h3-weight: 700; --h3-family: "Urbanist";
@@ -50,7 +45,6 @@
   --h5-size: 24px; --h5-line: 25px; --h5-weight: 600; --h5-family: "Urbanist";
   --h6-size: 20px; --h6-line: 25px; --h6-weight: 600; --h6-family: "Urbanist";
 
-  /* Grundinställningar för brödtext, storlek, höjd och tjocklek */
   --body1-size: 16px; --body1-line: 24px; --body1-weight: 400; --body1-family: "Inter";
   --body2-size: 15px; --body2-line: 25px; --body2-weight: 600; --body2-family: "Urbanist";
   --body3-size: 18px; --body3-line: 25px; --body3-weight: 600; --body3-family: "Urbanist";
@@ -58,7 +52,6 @@
   --body5-size: 17px; --body5-line: 20.4px; --body5-weight: 600; --body5-family: "Urbanist";
 }
 
-/* Grundläggande stil för body-elementet */
 body {
   line-height: 1.5;
   font-family: "Inter", "Urbanist", sans-serif system-ui, Helvetica, Arial;
@@ -68,14 +61,12 @@ body {
   background-color: var(--primary); 
 }
 
-/* Brödtext(.body-text 1-5) som hämtar grundinställningarna från root */
 .body-text { font-size: var(--body1-size); line-height: var(--body1-line); font-weight: var(--body1-weight); font-family: var(--body1-family);}
 .body-text-2 { font-size: var(--body2-size); line-height: var(--body2-line); font-weight: var(--body2-weight); font-family: var(--body2-family);}
 .body-text-3 { font-size: var(--body3-size); line-height: var(--body3-line); font-weight: var(--body3-weight); font-family: var(--body3-family);}
 .body-text-4 { font-size: var(--body4-size); line-height: var(--body4-line); font-weight: var(--body4-weight); font-family: var(--body4-family);}
 .body-text-5 { font-size: var(--body5-size); line-height: var(--body5-line); font-weight: var(--body5-weight); font-family: var(--body5-family);}
 
-/* Rubriker(h 1-6) som hämtar grundinställningarna från root */
 h1 { font-size: var(--h1-size); line-height: var(--h1-line); font-weight: var(--h1-weight); font-family: var(--h1-family);}
 h2 { font-size: var(--h2-size); line-height: var(--h2-line); font-weight: var(--h2-weight); font-family: var(--h2-family);}
 h3 { font-size: var(--h3-size); line-height: var(--h3-line); font-weight: var(--h3-weight); font-family: var(--h3-family);}
@@ -83,18 +74,15 @@ h4 { font-size: var(--h4-size); line-height: var(--h4-line); font-weight: var(--
 h5 { font-size: var(--h5-size); line-height: var(--h5-line); font-weight: var(--h5-weight); font-family: var(--h5-family);}
 h6 { font-size: var(--h6-size); line-height: var(--h6-line); font-weight: var(--h6-weight); font-family: var(--h6-family);}
 
-/* Gör bilder responsiva */
 img {
-  max-width: 100%; /* Gör att bilder inte överskrider sin containers bredd */
-  height: auto; /* Behåller bildens proportioner */
+  max-width: 100%;
+  height: auto;
 }
 
-/* Smidig övergång för bakgrunds- och textfärger på hela sidan */
 html, body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* Container för att centrera och begränsa bredden på innehållet */
 .container {
   width: 100%;
   max-width: 1400px;
@@ -104,9 +92,7 @@ html, body {
   padding-right: 1rem;
 }
 
-/* ------------------------- buttons ---------------------------------*/
 
-/* Grundläggande stil för knappar och element med klassen .btn */
 button, .btn, .btn-book, .btn-discover, .btn-rent, .subscribe-btn {
   align-items: center;
   height: 45px;

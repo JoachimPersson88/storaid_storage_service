@@ -26,14 +26,12 @@ export default function Price_List({
         Phasellus sollicitudin sapien eu massa accumsan, quis semper odio suscipit.
       </p>
 
-      {/* horisontell linje */}
       <hr className="rule"/>
 
 <ul className="list">
   {list.map((text, i) => (
     <li key={i}>
       
-      {/* använd SVG som mask */}
       <span className="check-icon"/>
       <p className="body-text">{text}</p>
     </li>

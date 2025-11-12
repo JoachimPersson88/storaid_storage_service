@@ -1,14 +1,11 @@
 import { NavLink, Link } from "react-router-dom";
-//komponenter som är hämtade från reacts bibliotek
 
 export default function Header() {
   return (
     <header>
-      {/* Topbar */}
       <div className="topbar">
         <div className="topbar_area">
           
-          {/* Kontakt */}
           <div className="contact body-text-4">
             <a className="contact_item">
               <img src="/src/project/interface/ui/Icon_Phone.svg" alt="" />
@@ -20,7 +17,6 @@ export default function Header() {
             </a>
           </div>
           
-          {/* Sociala medier */}
           <div className="media">
             <a className="social" href="https://www.facebook.com/StorAid" aria-label="Facebook">
               <img src="/src/project/interface/ui/Facebook.svg" alt="" />
@@ -38,24 +34,18 @@ export default function Header() {
         </div>
       </div>
       
-      {/* Navbar */}
       <div className="navbar">
         <div className="nav_area">
           
-          {/* Logo */}
           <Link to="/">
             <img src="/src/project/interface/assets/Logo.svg" alt="StorAid logo" />
           </Link>
           
-          {/* Länkar till sidorna */}
           <nav className="navlinks body-text-3">
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "link is-active" : "link")}
-              /*
-              Denna funktion tar emot ett objekt som innehåller egenskapen isActive. 
-              isActive är ett booleskt värde (true eller false) som avgör om länken är aktiv eller inte.
-              */
+  
               >
               Home
             </NavLink>
@@ -82,7 +72,6 @@ export default function Header() {
             </NavLink>
           </nav>
           
-          {/* Bokning */}
           <Link to="/booking" className="btn-book body-text-2">Book Now</Link>
 
         </div>

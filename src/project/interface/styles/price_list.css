@@ -31,7 +31,6 @@
     padding: 20px 0 0 0;
   }
 
-  /* horisontell linje */
   .rule {
     border: 0;
     height: 1px;
@@ -53,13 +52,10 @@
     gap: 10px;
     align-items: start;
 
-    /* --- Fick ta hjälp av chatGPT här --- */
-    /* --- IKONEN (mask + variabelfärg) --- */
     .check-icon {
       width: 18px;
       height: 18px;
       margin-top: 3px;
-      /* använd SVG som mask */
       mask: url("/src/project/interface/ui/Check.svg") no-repeat center;
       background-color: var(--secondary);
     }
