@@ -1,6 +1,6 @@
 export default function Looking_For_Secure() {
     return (
-        <section className="looking_for_service">
+        <section className="looking_for_secure">
             <div className="container">
 
                 <h3 className="header">Looking for Secure and Flexible Storage? Find

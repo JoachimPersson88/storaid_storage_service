@@ -1,4 +1,3 @@
-import Brands from "../components/Brands";
 import Testimonials from "../components/Testimonials";
 import Subscribe_Our_Newsletter from "../components/Subscribe_Our_Newsletter";
 import Footer from "../components/Footer";
