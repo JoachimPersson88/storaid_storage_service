@@ -15,6 +15,7 @@
 @import "./subscribe_our_newsletter.css";
 @import "./footer.css";
 @import "./page.css";
+@import "./booking_unit.css";
 
 
 /* Nollställer vissa standardinställningar för alla element samt deras pseudo-element (::before, ::after) */
