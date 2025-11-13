@@ -59,21 +59,17 @@ export default function Get_in_Touch() {
     <section className="get_in_touch">
       <div className="container">
         <h4 >Get in Touch</h4>
-        <div className="title_area">
+        <div className="contact_grid">        
           <h3>
             Get Personalized Assistance
-            <br/>
+            <br />
             – Contact Us
+            <p className="body-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
+            </p>
+            <img src="/src/project/interface/assets/Contact_Img.svg" alt="" />
           </h3>
-          <p className="body-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo
-          </p>
-
-        </div>
-        <div className="contact_grid">
-
-          <img src="/src/project/interface/assets/bg_img.svg" alt="" />
 
           <form className="form_card" onSubmit={onSubmit} noValidate>
 
