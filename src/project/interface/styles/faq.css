@@ -1,0 +1,21 @@
+.faq {
+    .container {
+        .header {
+            h3 {
+                color: var(--secondary);
+            }
+
+            h4 {
+                color: var(--accent);
+            }
+
+            .body-text {
+                color: var(--secondary);
+            }
+        }
+
+        faqs {
+
+        }
+    }
+}
