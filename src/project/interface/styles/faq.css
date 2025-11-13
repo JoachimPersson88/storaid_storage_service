@@ -1,5 +1,6 @@
 .faq {
     .container {
+
         .header {
             h3 {
                 color: var(--secondary);
@@ -11,11 +12,13 @@
 
             .body-text {
                 color: var(--secondary);
+                max-width: 600px;
+
             }
         }
 
-        faqs {
-
+        .faqs {
+            max-width: 650px;
         }
     }
 }
