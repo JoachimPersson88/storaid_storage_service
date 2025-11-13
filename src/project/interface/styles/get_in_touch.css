@@ -6,19 +6,19 @@
     margin-bottom: 12px;
   }
 
-    h3 {
-      max-width: 660px;
-    }
+  h3 {
+    max-width: 660px;
+  }
 
-    .body-text {
-      max-width: 650px;
-    }
+  .body-text {
+    max-width: 650px;
+  }
 
-    img {
-      height: 400px;
-      width: 800px;
-    }
-  
+  img {
+    height: 400px;
+    width: 800px;
+  }
+
 
   .contact_grid {
     display: grid;
@@ -60,7 +60,9 @@
     }
   }
 
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     width: 100%;
     border: 1px solid var(--accent);
     border-radius: 10px;

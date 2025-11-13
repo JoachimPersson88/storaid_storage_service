@@ -59,7 +59,7 @@ export default function Get_in_Touch() {
     <section className="get_in_touch">
       <div className="container">
         <h4 >Get in Touch</h4>
-        <div className="contact_grid">        
+        <div className="contact_grid">
           <h3>
             Get Personalized Assistance
             <br />
