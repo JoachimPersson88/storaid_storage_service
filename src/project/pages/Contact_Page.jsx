@@ -1,5 +1,6 @@
 import Subscribe_Our_Newsletter from "../components/Subscribe_Our_Newsletter";
 import Footer from "../components/Footer";
+import Get_in_Touch from "../components/Get_in_Touch";
 
 export default function Contact_Page() {
   return (
