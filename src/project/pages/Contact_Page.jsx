@@ -1,6 +1,7 @@
 import Subscribe_Our_Newsletter from "../components/Subscribe_Our_Newsletter";
 import Footer from "../components/Footer";
 import Get_in_Touch from "../components/Get_in_Touch";
+import FAQ from "../components/FAQ";
 
 export default function Contact_Page() {
   return (
@@ -19,7 +20,7 @@ export default function Contact_Page() {
       </section>
       <Get_in_Touch />
       Find Us On
-      FAQ
+      <FAQ />
       <Subscribe_Our_Newsletter />
       <Footer />
     </>

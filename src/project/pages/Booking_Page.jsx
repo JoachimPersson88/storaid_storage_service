@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Why_Choose_Us from "../components/Why_Choose_Us";
 import Looking_For_Secure from "../components/Looking_For_Secure";
 import Booking_Unit from "../components/Booking_Unit";
+import FAQ from "../components/FAQ";
 
 export default function Booking_Page() {
     return (
@@ -21,7 +22,7 @@ export default function Booking_Page() {
             <Booking_Unit />
             <Why_Choose_Us />
             <Looking_For_Secure />
-            FAQ
+            <FAQ />
             <Subscribe_Our_Newsletter />
             <Footer />
         </>

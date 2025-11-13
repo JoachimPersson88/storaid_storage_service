@@ -3,6 +3,7 @@ import Subscribe_Our_Newsletter from "../components/Subscribe_Our_Newsletter";
 import Footer from "../components/Footer";
 import Our_Services from "../components/Our_Services";
 import Looking_For_Secure from "../components/Looking_For_Secure";
+import FAQ from "../components/FAQ";
 
 export default function Services_Page() {
   return (
@@ -21,7 +22,7 @@ export default function Services_Page() {
     </section>
       <Our_Services />
       <Testimonials />
-      FAQ
+      <FAQ />
       <Looking_For_Secure />
       <Subscribe_Our_Newsletter />
       <Footer />
