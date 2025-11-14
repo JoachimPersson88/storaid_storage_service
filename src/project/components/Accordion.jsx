@@ -14,7 +14,7 @@ export default function Accordion({
         onClick={(e) => { e.preventDefault(); setExpanded((v) => !v); }}
         aria-expanded={expanded}
       >
-        <span className="acc_title">{title}</span>
+        <span className="acc_title body-text-5">{title}</span>
         <img
           className="acc_icon"
           src={

@@ -18,6 +18,7 @@
         &:hover,
         &:focus-visible {
             background-color: var(--accent);
+            color: var(--primary);
         }
     }
 
@@ -29,11 +30,11 @@
         background: var(--primary);
         color: var(--secondary);
         justify-self: center;
-        padding: 15px 10px 10px 10px;
+        padding: 15px 30px 10px 30px;
     }
 }
 
 .acc.is-open .acc_header {
     background: var(--accent);
-    color: var(--secondary);
+    color: var(--primary);
 }

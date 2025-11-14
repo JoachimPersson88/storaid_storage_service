@@ -30,7 +30,10 @@ export default function FAQ() {
             Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
 
-          <div className="faqs">
+     
+        </div>
+
+     <div className="accordion">
             {items.map((it, i) => (
               <Accordion
                 key={it.id ?? i}
@@ -39,7 +42,7 @@ export default function FAQ() {
               />
             ))}
           </div>
-        </div>
+
       </div>
     </section>
   );

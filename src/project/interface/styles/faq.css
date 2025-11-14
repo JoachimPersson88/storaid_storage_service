@@ -1,24 +1,27 @@
 .faq {
+    
     .container {
-
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 80px;
+        
         .header {
-            h3 {
-                color: var(--secondary);
-            }
 
             h4 {
                 color: var(--accent);
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                color: var(--secondary);
+                margin-bottom: 10px;
             }
 
             .body-text {
                 color: var(--secondary);
                 max-width: 600px;
-
             }
-        }
-
-        .faqs {
-            max-width: 650px;
         }
     }
 }
