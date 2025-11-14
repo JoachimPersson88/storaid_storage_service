@@ -16,6 +16,7 @@
       max-width: 720px;
       color: var(--accent);
       padding: 40px 40px 40px 0;
+      
     }
 
     .subscribe_input {
@@ -24,6 +25,7 @@
       border-radius: 5px;
       padding: 0 40px;
       background: var(--primary);
+      
     }
 
     .subscribe-btn {

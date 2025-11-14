@@ -3,7 +3,7 @@ import { createSubscription } from "../api/subscribe";
 
 export default function Subscribe_Our_Newsletter() {
     const [status, setStatus] = useState({
-        type: "", 
+        type: "",
         message: ""
     });
 
@@ -47,7 +47,7 @@ export default function Subscribe_Our_Newsletter() {
                         </p>
                     </div>
 
-                    <form className="subscribe_form" onSubmit={handleSubmit} noValidate>
+                    <form className="subscribe_form " onSubmit={handleSubmit} noValidate>
                         <input
                             name="email"
                             type="email"
@@ -63,10 +63,7 @@ export default function Subscribe_Our_Newsletter() {
                         {status.message ? (
                             <p
                                 className={`subscribe_status body-text ${status.type === "error" ? "is-error" : "is-success"
-                                    }`}
-                                role="status"
-                                aria-live="polite"
-                            >
+                                    }`}>
                                 {status.message}
                             </p>
                         ) : null}
