@@ -10,14 +10,14 @@ export default function Footer() {
                 </p>
 
                 <div className="legal">
-                    <a className="body-text" href="404_Page">
+                    <a className="body-text" href="*">
                         <img src="src/project/interface/ui/Footer_Icon.svg" alt="" />
                         Terms & Conditions
                     </a>
-                    <Link className="body-text" href="404_Page">
+                    <a className="body-text" href="*">
                         <img src="src/project/interface/ui/Footer_Icon.svg" alt="" />
                         Privacy Policy
-                    </Link>
+                    </a>
                 </div>
 
             </div>
