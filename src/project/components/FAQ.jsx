@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { fetchFAQ } from "../api/faq";    // ändra sökväg om din fil heter annat
-import Accordion from "./Accordion";       // single-row komponent (title/description)
+import { fetchFAQ } from "../api/faq";
+import Accordion from "./Accordion";
 
 export default function FAQ() {
   const [items, setItems] = useState([]);
 
-  // Hämta FAQ-poster från API vid mount
   useEffect(() => {
     let mounted = true;
     fetchFAQ()
@@ -31,7 +30,6 @@ export default function FAQ() {
             Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
 
-          {/* Behåller din struktur/namn: .faqs */}
           <div className="faqs">
             {items.map((it, i) => (
               <Accordion

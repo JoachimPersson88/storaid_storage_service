@@ -1,0 +1,39 @@
+.acc {
+    background: var(--primary);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 14px;
+
+    .acc_header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 100%;
+        padding: 18px 20px;
+        background: var(--color_2);
+        color: var(--secondary);
+        text-decoration: none;
+        outline: none;
+
+        &:hover,
+        &:focus-visible {
+            background-color: var(--accent);
+        }
+    }
+
+    .acc_icon {
+        margin-left: auto;
+    }
+
+    .acc_panel {
+        background: var(--primary);
+        color: var(--secondary);
+        justify-self: center;
+        padding: 15px 10px 10px 10px;
+    }
+}
+
+.acc.is-open .acc_header {
+    background: var(--accent);
+    color: var(--secondary);
+}
