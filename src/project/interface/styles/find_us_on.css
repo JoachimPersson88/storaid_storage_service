@@ -1,0 +1,75 @@
+.find_us {
+    background: var(--accent_3);
+
+    .container {
+
+        .find_us_area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 600px;
+
+            .bg_img {
+                align-self: end;             
+            }
+        }
+
+        .contact_area {
+            background: var(--color_5);
+            padding: 56px 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: var(--secondary);
+        }
+
+        .contact_list {
+            display: grid;
+            gap: 22px;
+            margin-top: 8px;
+        }
+
+        .contact_grid {
+            display: grid;
+            grid-template-columns: 64px auto;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .contact_grid .icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 999px;
+            background: var(--secondary);
+            display: grid;
+            place-items: center;
+        }
+
+        .contact_grid .contact_meta {
+            margin-bottom: 4px;
+            color: var(--secondary);
+        }
+
+        .contact_grid .body-text {
+            color: var(--secondary);
+        }
+
+        .social_area {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 16px;
+            margin-top: 8px;
+
+            .rule {
+                height: 2px;
+                background-color: var(--secondary);
+
+            }
+
+            .social_icons {
+                display: flex;
+                gap: 14px;
+            }
+        }
+    }
+}

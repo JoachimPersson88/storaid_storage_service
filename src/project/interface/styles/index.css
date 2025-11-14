@@ -36,6 +36,8 @@
   --color_2:rgba(236, 236, 236, 1);
   --color_3:rgba(250, 248, 236, 1);
   --color_4:rgba(241, 255, 234, 1);
+  --color_5:rgba(241, 255, 234, 0.56);
+
   
   --color-button-text: rgba(18, 55, 42, 1);
   --color-button-background: var(--primary); 
