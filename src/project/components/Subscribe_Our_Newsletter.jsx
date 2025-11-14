@@ -1,4 +1,3 @@
-// Subscribe_Our_Newsletter.jsx
 import { useState } from "react";
 import { createSubscription } from "../api/subscribe";
 
@@ -21,10 +20,10 @@ export default function Subscribe_Our_Newsletter() {
         }
 
         try {
-            const res = await createSubscription({ email }); // { success, message }
+            const res = await createSubscription({ email });
             setStatus({
                 type: "success",
-                message: res?.message || "Subscribed successfully.",
+                message: res?.message,
             });
         } catch (err) {
             setStatus({
@@ -61,7 +60,6 @@ export default function Subscribe_Our_Newsletter() {
                             {"Submit"}
                         </button>
 
-                        {/* statusrad – icke-invasiv, följer din befintliga layout */}
                         {status.message ? (
                             <p
                                 className={`subscribe_status body-text ${status.type === "error" ? "is-error" : "is-success"

@@ -28,6 +28,23 @@
 
     .subscribe-btn {
       height: 60px;
+
+      &:hover {
+        background-color: var(--secondary);
+        color: var(--primary);
+      }
+    }
+
+    ::placeholder {
+      color: var(--accent);
+    }
+
+    .subscribe_status.is-success {
+      color: #13a006d5;
+    }
+
+    .subscribe_status.is-error {
+      color: #c0392b;
     }
   }
 }

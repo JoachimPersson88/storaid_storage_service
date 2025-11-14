@@ -62,6 +62,13 @@
   }
 }
 
+.btn-rent {
+      &:hover {
+      background-color: var(--primary);
+      color: var(--secondary);
+    }
+}
+
 .price_card:hover .check-icon {
   background-color: var(--accent);
 }
