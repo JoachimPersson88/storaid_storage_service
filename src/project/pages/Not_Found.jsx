@@ -5,22 +5,21 @@ import Footer from "../components/Footer";
 export default function Not_Found() {
   return (
     <>
-    <section className="page">
+    <section className="not_found">
       <div className="not_found_area">
-        <p className="oops body-text-3">Oops!</p>
 
-        <h1 className="not_found_title">Page Not Found</h1>
+        <h5>Oops!</h5>
 
-        <p className="body-text not_found_msg">
+        <h1>Page Not Found</h1>
+
+        <p className="body-text">
           Sorry, the page you are looking for does not exist. It may have been
           moved, removed altogether or is temporarily unavailable.
         </p>
 
-        <Link to="/" className="btn-back-home body-text-2">
-          Back To Home
-        </Link>
+        <Link to="/" className="btn-home">Back To Home</Link>
+
       </div>
-      
     </section>
       <Subscribe_Our_Newsletter />
       <Footer />

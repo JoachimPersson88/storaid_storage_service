@@ -100,7 +100,7 @@ html, body {
 }
 
 
-button, .btn, .btn-book, .btn-discover, .btn-rent, .subscribe-btn {
+button, .btn, .btn-book, .btn-discover, .btn-rent, .subscribe-btn, .btn-home {
   align-items: center;
   height: 45px;
   background: var(--accent);
